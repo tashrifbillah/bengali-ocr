@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd ~/Downloads/numta
+
+for file in *.zip
+do
+	name=`echo ${file%.*}`	
+	# echo $name	
+
+	unzip $file -d $name/
+
+done
